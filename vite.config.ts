@@ -4,7 +4,8 @@ import react from "@vitejs/plugin-react-swc";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/HeadHunter/",
+  // base: "/HeadHunter/",
+  base: "/HeadHunterLayout/",
   plugins: [react()],
   test: {
     globals: true,
