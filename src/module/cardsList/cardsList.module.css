@@ -81,6 +81,7 @@
   border-radius: 5px;
   color: rgba(15, 15, 16, 1);
   background-color: rgba(15, 15, 16, 0.1);
+  text-decoration: none;
 }
 
 .cardsList__view {

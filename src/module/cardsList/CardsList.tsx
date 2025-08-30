@@ -81,10 +81,12 @@ const CardsList = () => {
           <p>{item.address?.city || "Город не указан"}</p>
 
           <div className={styles.cardsList__btns}>
-            <button className={styles.cardsList__view}>
-              Смотреть вакансию
-            </button>
-            <button className={styles.cardsList__apply}>Откликнуться</button>
+            <a href="#" className={styles.cardsList__view}>
+              Смотрaеть вакансию
+            </a>
+            <a href="#" className={styles.cardsList__apply}>
+              Откликнуться
+            </a>
           </div>
         </Card>
       ))}
