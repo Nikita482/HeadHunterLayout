@@ -35,7 +35,7 @@ const CardItem: React.FC<CardItemProps> = ({ item, children }) => {
       </h3>
 
       <div className={styles.cardsList__salaryExperience}>
-        <p>
+        <p className={styles.cardsList__font}>
           {item.salary
             ? [
                 item.salary.from && `${item.salary.from.toLocaleString()}`,
@@ -47,16 +47,22 @@ const CardItem: React.FC<CardItemProps> = ({ item, children }) => {
             : "Зарплата не указана"}
         </p>
 
-        <p className={styles.cardsList__experience}>
+        <p
+          className={`${styles.cardsList__experience} ${styles.cardsList__font}`}
+        >
           {item.experience.name || "Опыт не указан"}
         </p>
       </div>
 
-      <p className={styles.cardsList__companyName}>
+      <p
+        className={`${styles.cardsList__companyName} ${styles.cardsList__font}`}
+      >
         {item.employer.name || "Компания не указана"}
       </p>
 
-      <div className={styles.cardsList__workFormat}>
+      <div
+        className={`${styles.cardsList__workFormat} ${styles.cardsList__font}`}
+      >
         {item.work_format?.length
           ? item.work_format.map(
               (f: { id: string; name: string }, i: number) => {
@@ -72,9 +78,13 @@ const CardItem: React.FC<CardItemProps> = ({ item, children }) => {
           : "Формат не указан"}
       </div>
 
-      <p>{item.address?.city || "Город не указан"}</p>
+      <p className={styles.cardsList__font}>
+        {item.address?.city || "Город не указан"}
+      </p>
 
-      <div className={styles.cardsList__btns}>{children}</div>
+      <div className={`${styles.cardsList__btns} ${styles.cardsList__font}`}>
+        {children}
+      </div>
     </Card>
   );
 };

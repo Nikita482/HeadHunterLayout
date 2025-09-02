@@ -1,13 +1,13 @@
-/* .card {
-} */
-
 .cardsList__title {
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 20px;
   line-height: 24px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: rgba(54, 79, 199, 1);
-  font-style: SemiBold;
+}
+
+.cardsList__font {
+  font-family: "Open Sans", sans-serif;
 }
 
 .cardsList__salaryExperience {
@@ -42,7 +42,8 @@
 .cardsList__office,
 .cardsList__hybrid,
 .cardsList__remote {
-  font-family: Inter;
+  font-family: "Inter";
+  /* font-family: "Open Sans", sans-serif; */
   font-weight: 700;
   font-style: Bold;
   letter-spacing: 0%;

@@ -45,7 +45,11 @@ const CardsList = () => {
       <Tabs
         value={selectedCity || "Москва"}
         onChange={handleTabChange}
-        style={{ display: "flex", marginBottom: "36px" }}
+        style={{
+          display: "flex",
+          marginBottom: "36px",
+          fontFamily: '"Open Sans", sans-serif',
+        }}
       >
         <Tabs.Tab value="Москва" style={{ color: "rgba(15, 15, 16)" }}>
           Москва
