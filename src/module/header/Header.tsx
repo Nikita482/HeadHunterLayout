@@ -5,6 +5,7 @@ import user from "../../../public/user-circle.png";
 const Header = () => {
   return (
     <header className={styles.header}>
+      <h1>test</h1>
       <div className={styles.header__logo}>
         <img src={logo} alt="Logo" />
         <h1 className={styles.title}>.FrontEnd</h1>
